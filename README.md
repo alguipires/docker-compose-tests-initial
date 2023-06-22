@@ -4,6 +4,8 @@ Installation and test docker compose with a CRUD application using php, html, cs
 To install docker, follow the tutorial on the official docker page at this link https://docs.docker.com/desktop/install/ubuntu/
 
 After having cloned this project, you can check the folder structure
+
+```
 .
 ├── db
 │   ├── crud.sql
@@ -20,6 +22,7 @@ After having cloned this project, you can check the folder structure
          ├── index.php
          ├── read.php
          └── update.php
+´´´
 
 Being divided into 2 main folders, the db for the bank and the web application with the php code.
 
