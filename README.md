@@ -22,7 +22,7 @@ After having cloned this project, you can check the folder structure
          ├── index.php
          ├── read.php
          └── update.php
-´´´
+```
 
 Being divided into 2 main folders, the db for the bank and the web application with the php code.
 
