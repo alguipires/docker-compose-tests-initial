@@ -1,0 +1,24 @@
+version: "3.8"
+services:
+  web:
+    build: ./web
+    volumes:
+      - "./web/www:/var/www/html"
+    ports:
+      - "8000:80"
+    networks:
+      - netcrud
+  db:
+    build: ./db
+#    image: mysql:8-debian
+    volumes:
+#      - "./db/crud.sql:/docker-entrypoint-initdb.d/crud.sql"
+      - "db-data:/var/lib/mysql"
+    environment:
+      - MYSQL_ROOT_PASSWORD=abc123
+    networks:
+      - netcrud
+networks:
+  netcrud:
+volumes:
+  db-data:
